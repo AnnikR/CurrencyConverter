@@ -15,9 +15,10 @@
         <TextView
             android:id="@+id/textViewCurrency"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:text="@string/currency"
+            android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -25,10 +26,12 @@
         <TextView
             android:id="@+id/textViewRate"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:paddingBottom="10dp"
-            android:text="@string/rate" />
+            android:text="@string/rate"
+            android:textAlignment="center"
+            android:textSize="18sp" />
     </LinearLayout>
 
 </LinearLayout>
