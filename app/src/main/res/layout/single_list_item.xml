@@ -4,7 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -63,7 +65,8 @@
                 android:inputType="numberDecimal"
                 android:text="1"
                 android:textAlignment="textEnd"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:imeOptions="actionDone"/>
 
             <TextView
                 android:id="@+id/textView8"
@@ -153,7 +156,8 @@
                 android:inputType="numberDecimal"
                 android:text="1"
                 android:textAlignment="textEnd"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:imeOptions="actionDone"/>
 
             <TextView
                 android:id="@+id/currency_name1"
