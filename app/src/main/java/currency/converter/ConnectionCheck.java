@@ -4,19 +4,25 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-public class ConnectionCheck {
+/**
+ * Check if internet connection is active
+ */
+class ConnectionCheck {
 
     private Context context;
 
-    public ConnectionCheck(Context context) {
+    ConnectionCheck(Context context) {
         this.context = context;
     }
 
-    public boolean isNetworkAvailable() {
+    boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager = (ConnectivityManager) context
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetworkInfo = connectivityManager
-                .getActiveNetworkInfo();
+
+        NetworkInfo activeNetworkInfo = null;
+        if (connectivityManager != null) {
+            activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        }
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 }

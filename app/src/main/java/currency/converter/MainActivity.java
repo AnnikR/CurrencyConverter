@@ -1,7 +1,6 @@
 package currency.converter;
 
 import android.app.Activity;
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -51,7 +50,7 @@ public class MainActivity extends Activity
         datetimeView = findViewById(R.id.datetime);
         nameView = findViewById(R.id.name);
 
-        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        progressBar = findViewById(R.id.progressBar);
 
         new GetXMLFromServer().execute();
 
@@ -83,6 +82,10 @@ public class MainActivity extends Activity
         });
     }
 
+    /**
+     * Parse XML values to Hashmap
+     * @param xmlString
+     */
     public void ParseXML(String xmlString)
     {
         try
@@ -163,6 +166,9 @@ public class MainActivity extends Activity
         }
     }
 
+    /**
+     * Create connection
+     */
     private class GetXMLFromServer extends AsyncTask<String,Void,String> {
 
         HttpHandler nh;
