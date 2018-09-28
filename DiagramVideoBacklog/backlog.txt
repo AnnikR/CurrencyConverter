@@ -1,0 +1,25 @@
+Backlog
+
+1. AS A user I WANT TO 	view the currency values in euros SO THAT I know that the currency values are roughly the right one
+	Task: Get currency rates and currency name to ListView from XML				Done: 20.9.2018
+
+2. AS A user I WANT TO 	choose the currency I want SO THAT I can choose which value I want to convert.
+	Task: Send currency information to new intent from ListView-value user clicked		Done: 20.9.2018
+
+3. AS A user I WANT TO 	open calculator SO THAT I can convert the currency I chose.
+	Task: Open new intent with currency information						Done: 20.9.2018
+
+4. AS A user I WANT TO 	choose to convert the currency into euros or vice versa SO THAT I know how much money you have to change the euro for traveling abroad and how much foreign online shop's shirt costs in euros.
+	Task: Make two counters									Done: 20.9.2018
+
+5. AS A user I WANT TO 	enter the value I want to convert SO THAT I don't have to use a separate calculator to calculate different amounts.
+	Task: Make TextEdit where user can enter the desired value				Done: 20.9.2018
+
+6. AS A user I WANT TO 	get the result of a currency change SO THAT I know how much a certain amount of currency is in a second currency.
+	Task: Show result in TextView								Done: 20.9.2018
+
+7. AS A user I WANT TO 	see the date the information was fetched SO THAT I know that the information is not old.
+	Task: Get date from XML to TextView							Done: 23.9.2018
+
+7. AS A user I WANT TO 	see the source where information was fetched SO THAT I know that the information is reliable.
+	Task: Get source name from XML to TextView						Done: 23.9.2018
